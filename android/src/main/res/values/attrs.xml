@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FancyCamera">
+        <attr name="enableFlash" format="boolean" />
+        <attr name="saveToGallery" format="boolean" />
+        <attr name="quality" format="integer" />
+        <attr name="cameraPosition" format="integer" />
+        <attr name="cameraOrientation" format="integer" />
+        <attr name="disableHEVC" format="boolean" />
+        <attr name="maxAudioBitRate" format="integer" />
+        <attr name="maxVideoBitrate" format="integer" />
+        <attr name="maxVideoFrameRate" format="integer" />
+    </declare-styleable>
+</resources>

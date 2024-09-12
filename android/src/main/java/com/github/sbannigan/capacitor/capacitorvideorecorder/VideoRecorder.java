@@ -23,11 +23,6 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import co.fitcom.fancycamera.CameraEventListenerUI;
-import co.fitcom.fancycamera.EventType;
-import co.fitcom.fancycamera.FancyCamera;
-import co.fitcom.fancycamera.PhotoEvent;
-import co.fitcom.fancycamera.VideoEvent;
 
 @NativePlugin(
         requestCodes = {
@@ -157,7 +152,7 @@ public class VideoRecorder extends Plugin {
                         object.put("videoUrl", path);
                         getCall().resolve(object);
                     } else {
-                        if (event.getType() == co.fitcom.fancycamera.EventType.ERROR) {
+                        if (event.getType() == EventType.ERROR) {
                             getCall().reject(event.getMessage());
                         }
                     }
